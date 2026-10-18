@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA Browser Mode - Tech Hariom.7</title>
+  <style>
+    /* Background with animated gradient */
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #111, #222);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      padding: 60px 20px 20px;
+      font-size: 3em;
+      font-weight: bold;
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+      animation: fadeInDown 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .game-container {
+      margin-top: 100px;
+      animation: zoomIn 2s ease;
+    }
+
+    @keyframes zoomIn {
+      from {transform: scale(0.8); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+
+    .play-btn {
+      background: #ff0044;
+      border: none;
+      padding: 25px 70px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 25px #ff0044, 0 0 50px #ff0044;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {box-shadow: 0 0 20px #ff0044;}
+      50% {box-shadow: 0 0 40px #ff0044;}
+      100% {box-shadow: 0 0 20px #ff0044;}
+    }
+
+    .play-btn:hover {
+      background: #ff3366;
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 150px;
+      padding: 20px;
+      font-size: 1.3em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 GTA Browser Mode 🎮</header>
+  
+  <div class="game-container">
+    <button class="play-btn" onclick="window.location.href='https://quenq.com/apps/iii-online/'">
+      ▶ Play Game
+    </button>
+  </div>
+  
+  <footer>
+    🚀 Thanks for exploring <strong>Tech Hariom.7</strong>
+  </footer>
+</body>
+</html>
